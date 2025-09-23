@@ -1,3 +1,45 @@
-<p>
-  pagina-inicio works!
-</p>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="person-circle-outline"></ion-icon>
+        Perfil
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="header-info">
+    <h2>Hola Susana!</h2>
+    <p>{{ fechaHoy }}</p>
+    <p class="mensaje-alerta">Tienes mensajes sin leer!!</p>
+  </div>
+
+  <div class="grid-botones">
+    <ion-button expand="block" color="light" (click)="irAMedicamentos()">
+      <ion-icon name="medkit-outline"></ion-icon>
+      Horarios medicamentos
+    </ion-button>
+
+    <ion-button expand="block" color="light" (click)="contactarMedico()">
+      <ion-icon name="medkit"></ion-icon>
+      Contactar médico
+    </ion-button>
+
+    <ion-button expand="block" color="light" (click)="comprarMedicamentos()">
+      <ion-icon name="cart-outline"></ion-icon>
+      Comprar medicamentos
+    </ion-button>
+
+    <ion-button expand="block" color="light" (click)="contactarFamiliar()">
+      <ion-icon name="people-outline"></ion-icon>
+      Contactar familiar
+    </ion-button>
+  </div>
+
+  <ion-button expand="block" color="danger" class="boton-sos" (click)="enviarSOS()">
+    SOS
+  </ion-button>
+</ion-content>
