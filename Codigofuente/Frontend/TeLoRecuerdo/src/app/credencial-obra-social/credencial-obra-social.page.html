@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Subir credencial</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Subí una foto de tu credencial</h2>
+  <input type="file" accept="image/*" (change)="onFileSelected($event)" />
+
+  <div *ngIf="imagenCredencial" style="margin-top:20px;">
+    <img [src]="imagenCredencial" alt="Credencial" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
+  </div>
+</ion-content>

@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-pagina-inicio',
   templateUrl: './pagina-inicio.component.html',
   styleUrls: ['./pagina-inicio.component.scss'],
-  imports:[IonicModule, RouterModule, IonIcon]
+  imports:[IonicModule, RouterModule]
 })
 export class PaginaInicioComponent {
   fechaHoy: string;

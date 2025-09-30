@@ -3,10 +3,10 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-productos',
-  templateUrl: './productos.component.html',
-  styleUrls: ['./productos.component.scss'],
+  selector: 'app-contacto-medico',
+  templateUrl: './contactomedico.component.html',
+  styleUrls: ['./contactomedico.component.scss'],
   standalone: true,
   imports: [IonicModule, RouterModule]
 })
-export class ProductosComponent {}
+export class ContactoMedicoComponent {}

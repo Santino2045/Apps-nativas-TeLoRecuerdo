@@ -1,42 +1,45 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Inicio</ion-title>
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon name="person-circle-outline"></ion-icon>
-        Perfil
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
+  <div class="nav-botones">
+    <ion-button fill="clear" [routerLink]="['/perfil']">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-icon src="assets/icon/person.svg"></ion-icon>
+      <span>Perfil</span>
+    </ion-button>
+  </div>
+
   <div class="header-info">
     <h2>Hola Susana!</h2>
     <p>{{ fechaHoy }}</p>
-    <p class="mensaje-alerta">Tienes mensajes sin leer!!</p>
+    <p class="mensaje-alerta">Tienes mensajes sin leer!</p>
   </div>
 
   <div class="grid-botones">
     <ion-button expand="block" color="light" [routerLink]="['/calendario']">
-      <ion-icon [src]="'assets/icon/medical-outline.svg'"></ion-icon>
-      <ion-icon name="medkit-outline"></ion-icon>
-      Horarios medicamentos
+      <div class="boton-contenido">
+        <ion-icon src="assets/icon/alarm.svg"></ion-icon>
+        <span>Horarios medicamentos y calendario</span>
+      </div>
     </ion-button>
 
     <ion-button expand="block" color="light" [routerLink]="['/contacto-medico']">
-      <ion-icon name="medkit"></ion-icon>
-      Contactar médico
-    </ion-button>
-
-    <ion-button expand="block" color="light" [routerLink]="['/productos']">
-      <ion-icon name="cart-outline"></ion-icon>
-      Comprar medicamentos
+      <div class="boton-contenido">
+        <ion-icon src="assets/icon/people.svg"></ion-icon>
+        <span>Contactar médico</span>
+      </div>
     </ion-button>
 
     <ion-button expand="block" color="light" [routerLink]="['/contacto-familia']">
-      <ion-icon name="people-outline"></ion-icon>
-      Contactar familiar
+      <div class="boton-contenido">
+        <ion-icon src="assets/icon/people-circle.svg"></ion-icon>
+        <span>Contactar familiar</span>
+      </div>
+    </ion-button>
+
+    <ion-button expand="block" color="light" [routerLink]="['/productos']">
+      <div class="boton-contenido">
+        <ion-icon src="assets/icon/medical.svg"></ion-icon>
+        <span>Comprar medicamentos</span>
+      </div>
     </ion-button>
   </div>
 

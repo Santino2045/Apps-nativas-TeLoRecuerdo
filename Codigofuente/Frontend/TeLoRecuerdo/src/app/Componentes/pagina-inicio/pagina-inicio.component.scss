@@ -2,12 +2,37 @@ ion-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   background: #f4f4f4;
+  width: 100%;
+
+  .nav-botones {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .nav-botones ion-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .nav-botones ion-icon {
+    font-size: 2rem;
+  }
 
   .header-info {
-    margin-top: 25px;
+    margin-top: -20px;
     text-align: left;
-    width: 90%;
+    width: 100%;
+    max-width: 420px;
 
     h2 {
       font-size: 2rem;
@@ -39,7 +64,10 @@ ion-content {
     grid-template-rows: 1fr 1fr;
     gap: 18px;
     margin: 32px 0 24px 0;
-    width: 90%;
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    justify-content: center;
   }
 
   .grid-botones ion-button {
@@ -47,30 +75,54 @@ ion-content {
     background: #b6d7e8;
     color: #000;
     border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
     font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    width: 100%;
+    min-width: 0;
+    padding: 0;
   }
 
-  .grid-botones ion-icon {
+  .grid-botones ion-button .boton-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .grid-botones ion-button ion-icon {
     font-size: 2.5rem;
     margin-bottom: 8px;
+    display: block;
+  }
+
+  .grid-botones ion-button span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-top: 4px;
   }
 
   .boton-sos {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     background-color: #ff2d2d !important;
-    color: #000 !important;
-    width: 90%;
+    color: #000000 !important;
+    width: 100%;
+    max-width: 420px;
     margin-bottom: 30px;
-    border-radius: 12px;
-    height: 64px;
+    border-radius: 16px;
+    height: 90px;
     letter-spacing: 2px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   ion-button[slot="end"] {
@@ -78,5 +130,21 @@ ion-content {
     color: #000;
     font-weight: bold;
     font-size: 1rem;
+  }
+
+  @media (max-width: 500px) {
+    .grid-botones {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .boton-sos {
+      height: 80px;
+      font-size: 2rem;
+    }
+    .nav-botones,
+    .header-info {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
