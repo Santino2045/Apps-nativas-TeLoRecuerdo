@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { IonicModule, NavController } from '@ionic/angular';
+import { IonicModule, NavController, IonIcon } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-pagina-inicio',
   templateUrl: './pagina-inicio.component.html',
   styleUrls: ['./pagina-inicio.component.scss'],
-  imports:[IonicModule]
+  imports:[IonicModule, RouterModule, IonIcon]
 })
 export class PaginaInicioComponent {
   fechaHoy: string;

@@ -18,22 +18,23 @@
   </div>
 
   <div class="grid-botones">
-    <ion-button expand="block" color="light" (click)="irAMedicamentos()">
+    <ion-button expand="block" color="light" [routerLink]="['/calendario']">
+      <ion-icon [src]="'assets/icon/medical-outline.svg'"></ion-icon>
       <ion-icon name="medkit-outline"></ion-icon>
       Horarios medicamentos
     </ion-button>
 
-    <ion-button expand="block" color="light" (click)="contactarMedico()">
+    <ion-button expand="block" color="light" [routerLink]="['/contacto-medico']">
       <ion-icon name="medkit"></ion-icon>
       Contactar médico
     </ion-button>
 
-    <ion-button expand="block" color="light" (click)="comprarMedicamentos()">
+    <ion-button expand="block" color="light" [routerLink]="['/productos']">
       <ion-icon name="cart-outline"></ion-icon>
       Comprar medicamentos
     </ion-button>
 
-    <ion-button expand="block" color="light" (click)="contactarFamiliar()">
+    <ion-button expand="block" color="light" [routerLink]="['/contacto-familia']">
       <ion-icon name="people-outline"></ion-icon>
       Contactar familiar
     </ion-button>
