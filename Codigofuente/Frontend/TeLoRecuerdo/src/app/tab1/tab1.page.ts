@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
-import { PaginaInicioComponent } from '../Componentes/pagina-inicio/pagina-inicio.component';
+import { PaginaInicioComponent } from '../componentes/pagina-inicio/pagina-inicio.component';
 
 @Component({
   selector: 'app-tab1',

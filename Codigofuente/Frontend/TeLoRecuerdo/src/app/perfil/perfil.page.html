@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="nav-botones">
+    <ion-button fill="clear" [routerLink]="['/']">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      <span>Volver</span>
+    </ion-button>
+  </div>
+
+  <div class="perfil-container">
+    <div class="foto-perfil">
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </div>
+    <h2 class="nombre-usuario">Susana Gimenez</h2>
+    <p class="dato-usuario">Edad: 68 años</p>
+    <p class="dato-usuario">Género: Femenino</p>
+    <p class="dato-usuario">Tipo de sangre: O+</p>
+    <ion-button expand="block" color="primary" class="boton-credencial" [routerLink]="['/credencial']">
+  Credencial obra social
+    </ion-button>
+  </div>
+</ion-content>
