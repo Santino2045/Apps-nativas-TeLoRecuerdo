@@ -25,7 +25,7 @@ export class PaginaInicioComponent {
   }
 
   comprarMedicamentos() {
-    this.navCtrl.navigateForward('/tab3');
+    this.navCtrl.navigateForward('/productos');
   }
 
   contactarFamiliar() {

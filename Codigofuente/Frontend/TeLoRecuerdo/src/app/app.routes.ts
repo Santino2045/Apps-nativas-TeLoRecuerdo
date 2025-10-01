@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { PaginaInicioComponent } from './componentes/pagina-inicio/pagina-inicio.component';
-import { ContactoMedicoComponent } from './componentes/contacto-medico/contactomedico.component';
-import { ContactoFamiliaComponent } from './componentes/contacto-familia/contactofamilia.component';
+import { ContactoMedicoComponent } from './componentes/contactomedico/contactomedico.component';
+import { ContactoFamiliaComponent } from './componentes/contactofamilia/contactofamilia.component';
 import { ProductosComponent } from './componentes/productos/productos.component';
 import { CalendarioComponent } from './componentes/calendario/calendario.component';
 

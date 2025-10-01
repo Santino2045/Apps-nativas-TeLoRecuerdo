@@ -8,3 +8,26 @@
     <span>Perfil</span>
   </ion-button>
 </div>
+<ion-content>
+  <div class="buscador">
+    <ion-input [(ngModel)]="busqueda" placeholder="Buscar medicamento..."></ion-input>
+    <ion-button expand="block" (click)="buscarProductos(busqueda)">Buscar</ion-button>
+  </div>
+
+  <ion-list *ngIf="productos.length > 0">
+    <ion-item *ngFor="let item of productos">
+      <ion-thumbnail slot="start">
+        <img [src]="item.thumbnail" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ item.title }}</h2>
+        <p>$ {{ item.price }}</p>
+      </ion-label>
+      <ion-button fill="clear" slot="end" [href]="item.permalink" target="_blank">
+        Ver
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <p *ngIf="productos.length === 0 && busqueda">No se encontraron productos.</p>
+</ion-content>
