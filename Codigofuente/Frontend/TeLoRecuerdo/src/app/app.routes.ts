@@ -1,9 +1,10 @@
 import { Routes } from '@angular/router';
-import { PaginaInicioComponent } from './componentes/pagina-inicio/pagina-inicio.component';
-import { ContactoMedicoComponent } from './componentes/contactomedico/contactomedico.component';
-import { ContactoFamiliaComponent } from './componentes/contactofamilia/contactofamilia.component';
-import { ProductosComponent } from './componentes/productos/productos.component';
-import { CalendarioComponent } from './componentes/calendario/calendario.component';
+import { PaginaInicioComponent } from './Componentes/pagina-inicio/pagina-inicio.component';
+import { ContactoMedicoComponent } from './Componentes/contacto-medico/contactomedico.component';
+import { ContactoFamiliaComponent } from './Componentes/contacto-familia/contactofamilia.component';
+import { ProductosComponent } from './Componentes/productos/productos.component';
+import { CalendarioComponent } from './Componentes/calendario/calendario.component';
+import { NuevoMedicamentoComponent } from './Componentes/nuevo-medicamento/nuevo-medicamento.component';
 
 export const routes: Routes = [
   { path: '', component: PaginaInicioComponent },
@@ -11,6 +12,7 @@ export const routes: Routes = [
   { path: 'contacto-familia', component: ContactoFamiliaComponent },
   { path: 'productos', component: ProductosComponent },
   { path: 'calendario', component: CalendarioComponent },
+  { path: 'nuevo-medicamento', component: NuevoMedicamentoComponent },
   {
     path: 'perfil',
     loadComponent: () => import('./perfil/perfil.page').then(m => m.PerfilPage)
