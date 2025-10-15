@@ -1,83 +1,10 @@
-<ion-header translucent="true">
-  <ion-toolbar>
-    <ion-buttons slot="start" class="toolbar-block">
-      <ion-button fill="clear">
-        <ion-icon name="arrow-undo-outline"></ion-icon>
-      </ion-button>
-      <span class="toolbar-caption">Inicio</span>
-    </ion-buttons>
-
-    <ion-title class="sr-only">Contactar médico</ion-title>
-
-    <ion-buttons slot="end" class="toolbar-block">
-      <ion-button fill="clear">
-        <ion-icon name="person-circle-outline"></ion-icon>
-      </ion-button>
-      <span class="toolbar-caption">Perfil</span>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content fullscreen="true">
-  <!-- Carrusel de médicos -->
-  <section class="carousel">
-    <ion-button class="nav left" fill="clear">
-      <ion-icon name="chevron-back-circle-outline"></ion-icon>
-    </ion-button>
-
-    <div class="avatars">
-      <!-- Usa tus imágenes reales en assets/ o URLs -->
-      <button class="avatar-card">
-        <ion-avatar>
-          <img alt="Marcelo Morano" src="assets/medicos/marcelo.jpg" />
-        </ion-avatar>
-        <small>Marcelo Morano</small>
-      </button>
-
-      <button class="avatar-card selected">
-        <ion-avatar>
-          <img alt="Alfredo Manzanares" src="assets/medicos/alfredo.jpg" />
-        </ion-avatar>
-        <small>Alfredo Manzanares</small>
-      </button>
-
-      <button class="avatar-card">
-        <ion-avatar>
-          <img alt="Mora Sala" src="assets/medicos/mora.jpg" />
-        </ion-avatar>
-        <small>Mora Sala</small>
-      </button>
-    </div>
-
-    <ion-button class="nav right" fill="clear">
-      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
-    </ion-button>
-  </section>
-
-  <!-- Nombre grande del médico seleccionado -->
-  <h2 class="selected-name">Alfredo Manzanares</h2>
-
-  <!-- Acciones -->
-  <section class="actions">
-    <div class="action">
-      <ion-button shape="round" size="large" class="circle">
-        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-      </ion-button>
-      <span>Mensaje</span>
-    </div>
-
-    <div class="action">
-      <ion-button shape="round" size="large" class="circle">
-        <ion-icon name="call-outline"></ion-icon>
-      </ion-button>
-      <span>Llamar</span>
-    </div>
-
-    <div class="action">
-      <ion-button shape="round" size="large" class="circle">
-        <ion-icon name="videocam-outline"></ion-icon>
-      </ion-button>
-      <span>Videollamada</span>
-    </div>
-  </section>
-</ion-content>
+<div class="nav-central">
+  <ion-button fill="clear" [routerLink]="['/']">
+    <ion-icon src="assets/icon/arrow-back-outline.svg"></ion-icon>
+    <span>Inicio</span>
+  </ion-button>
+  <ion-button fill="clear" [routerLink]="['/perfil']">
+    <ion-icon src="assets/icon/person.svg"></ion-icon>
+    <span>Perfil</span>
+  </ion-button>
+</div>
