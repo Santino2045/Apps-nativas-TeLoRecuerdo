@@ -7,7 +7,7 @@ const corsOptions = {
 
 const clientSQL = new Client({
     user : 'postgres.eybipfpgubaqouvctavy',
-    password : 'Santi123!a7',
+    password : 'Hola123!!¿!!',
     database : 'postgres',
     host : 'aws-1-us-east-2.pooler.supabase.com',
     port : 6543
