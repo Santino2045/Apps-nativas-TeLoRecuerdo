@@ -3,6 +3,7 @@
   justify-content: flex-end;
   gap: 12px;
   margin-bottom: 12px;
+  flex-wrap: wrap;
 }
 
 .nav-botones ion-button {
@@ -25,8 +26,8 @@
 }
 
 .foto-perfil {
-  width: 120px;
-  height: 120px;
+  width: clamp(96px, 24vw, 140px);
+  height: clamp(96px, 24vw, 140px);
   border-radius: 50%;
   background: #e0e0e0;
   display: flex;
@@ -37,26 +38,26 @@
 }
 
 .foto-perfil ion-icon {
-  font-size: 6rem;
+  font-size: clamp(3.2rem, 10vw, 6rem);
   color: #bdbdbd;
 }
 
 .nombre-usuario {
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 4.5vw, 1.6rem);
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .dato-usuario {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 3.5vw, 1.1rem);
   margin-bottom: 6px;
   text-align: center;
 }
 
 .boton-credencial {
   margin-top: 24px;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 3.5vw, 1.1rem);
   font-weight: bold;
   width: 90%;
   max-width: 320px;

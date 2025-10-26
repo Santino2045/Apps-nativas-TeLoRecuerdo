@@ -1,24 +1,28 @@
-<div class="nav-central">
-  <ion-button fill="clear" [routerLink]="['/']">
-    <ion-icon src="assets/icon/arrow-back-outline.svg"></ion-icon>
-    <span>Inicio</span>
-  </ion-button>
-  <ion-button fill="clear" routerLink="['/perfil']">
-    <ion-icon src="assets/icon/person.svg"></ion-icon>
-    <span>Perfil</span>
-  </ion-button>
-</div>
-<div class="Calendario">
-  <h1>Calendario</h1>
-<ion-datetime></ion-datetime>
-</div>
-<div class="botones">
-  <ion-button routerLink="/nuevo-medicamento">Agregar nuevo medicamento</ion-button>
-  <ion-button>Agregar fecha importante</ion-button>
-  <ion-button>Historial medicamentos</ion-button>
-  <ion-button>Modificar medicamentos</ion-button>
-  <ion-button>Compartir fechas con familiar</ion-button>
-  <ion-button>Historial paciente</ion-button>
-  <ion-button>Modificar medicamentos</ion-button>
-  <ion-button>Tomar pastilla... / Nada pendiente!</ion-button>
-</div>
+<ion-content [fullscreen]="true">
+  <div class="nav-central">
+    <ion-button fill="clear" [routerLink]="['/']">
+      <ion-icon src="assets/arrow-back-outline.svg"></ion-icon>
+      <span>Inicio</span>
+    </ion-button>
+    <ion-button fill="clear" [routerLink]="['/perfil']">
+      <ion-icon src="assets/icon/person.svg"></ion-icon>
+      <span>Perfil</span>
+    </ion-button>
+  </div>
+
+  <div class="Calendario">
+    <h1>Calendario</h1>
+    <ion-datetime></ion-datetime>
+  </div>
+
+  <div class="botones">
+    <ion-button [routerLink]="['/nuevo-medicamento']">Agregar nuevo medicamento</ion-button>
+    <ion-button>Agregar fecha importante</ion-button>
+    <ion-button>Historial medicamentos</ion-button>
+    <ion-button>Modificar medicamentos</ion-button>
+    <ion-button>Compartir fechas con familiar</ion-button>
+    <ion-button>Historial paciente</ion-button>
+    <ion-button>Modificar medicamentos</ion-button>
+    <ion-button>Tomar pastilla... / Nada pendiente!</ion-button>
+  </div>
+</ion-content>

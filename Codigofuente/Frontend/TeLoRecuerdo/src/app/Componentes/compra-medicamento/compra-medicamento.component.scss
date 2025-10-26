@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
   margin-top: 24px;
   margin-bottom: 24px;
+  flex-wrap: wrap;
 }
 
 .nav-central ion-button {
@@ -17,11 +18,79 @@
   box-shadow: none;
 }
 
-.nav-central ion-icon {
-  font-size: 2.2rem;
-}
+.nav-central ion-icon { font-size: 2rem; }
 
 .nav-central span {
   margin-top: 4px;
   font-size: 1rem;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding: 0 12px;
+}
+
+.search-wrapper ion-searchbar {
+  width: 100%;
+  max-width: 640px;
+}
+
+.product-card {
+  background: #e8f2ff; /* celeste suave similar al diseño */
+  border-radius: 12px;
+  min-height: 180px;
+}
+
+.product-card ion-img {
+  width: 100%;
+  height: clamp(90px, 18vw, 140px);
+  object-fit: contain;
+  margin-top: 8px;
+}
+
+.product-name {
+  font-weight: 600;
+  margin: 8px 0;
+  font-size: clamp(0.85rem, 1.8vw, 1rem);
+}
+
+.product-badge {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 16px 0 24px;
+  flex-wrap: wrap;
+}
+
+.pagination .label {
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.pagination .sep {
+  opacity: 0.6;
+}
+
+.pagination .ellipsis {
+  padding: 0 4px;
+}
+
+/* Breakpoints para pantallas pequeñas */
+@media (max-width: 480px) {
+  .nav-central { gap: 12px; }
+  .nav-central ion-icon { font-size: 1.6rem; }
+  .nav-central span { font-size: 0.9rem; }
+}
+
+/* En pantallas grandes aumentar un poco el tamaño de iconos */
+@media (min-width: 1200px) {
+  .nav-central ion-icon { font-size: 2.2rem; }
 }

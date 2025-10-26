@@ -3,13 +3,13 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-nuevo-medicamento',
-  templateUrl: './nuevo-medicamento.component.html',
-  styleUrls: ['./nuevo-medicamento.component.scss'],
+  selector: 'app-carrito',
+  templateUrl: './carrito.component.html',
+  styleUrls: ['./carrito.component.scss'],
   standalone: true,
   imports: [IonicModule, RouterModule]
 })
-export class NuevoMedicamentoComponent  implements OnInit {
+export class CarritoComponent  implements OnInit {
 
   constructor() { }
 

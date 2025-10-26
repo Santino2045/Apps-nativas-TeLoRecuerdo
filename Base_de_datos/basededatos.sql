@@ -55,3 +55,12 @@ CREATE TABLE Consulta (
     FOREIGN KEY (id_paciente) REFERENCES Paciente(id_paciente),
     FOREIGN KEY (id_medico) REFERENCES Medico(id_medico)
 );
+
+-- Tabla de productos para compras de medicamentos (usada por el backend)
+CREATE TABLE IF NOT EXISTS productos (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    precio NUMERIC(10,2) NOT NULL DEFAULT 0,
+    stock INT NOT NULL DEFAULT 0,
+    descripcion TEXT
+);

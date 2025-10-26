@@ -117,7 +117,7 @@ app.put('/productos/:id', async (req, res) => {
 app.delete('/productos/:id', async (req, res) => {
     //console.log(req.body);
     const id = req.params.id;
-    const query = 'DELETE FROM productos WHERE id = %1';
+    const query = 'DELETE FROM productos WHERE id = $1';
     const values = [id];
 
     try {

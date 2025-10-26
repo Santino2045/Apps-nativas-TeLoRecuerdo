@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
   margin-top: 24px;
   margin-bottom: 24px;
+  flex-wrap: wrap;
 }
 
 .nav-central ion-button {
@@ -17,9 +18,7 @@
   box-shadow: none;
 }
 
-.nav-central ion-icon {
-  font-size: 2.2rem;
-}
+.nav-central ion-icon { font-size: 2rem; }
 
 .nav-central span {
   margin-top: 4px;
@@ -188,4 +187,14 @@
   .page {
     justify-content: flex-start;
   }
+}
+
+@media (max-width: 480px) {
+  .nav-central { gap: 12px; }
+  .nav-central ion-icon { font-size: 1.6rem; }
+  .nav-central span { font-size: 0.9rem; }
+}
+
+@media (min-width: 1200px) {
+  .nav-central ion-icon { font-size: 2.2rem; }
 }

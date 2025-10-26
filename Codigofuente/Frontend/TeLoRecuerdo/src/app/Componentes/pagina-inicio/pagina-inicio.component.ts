@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-pagina-inicio',
   templateUrl: './pagina-inicio.component.html',
   styleUrls: ['./pagina-inicio.component.scss'],
+  standalone: true,
   imports:[IonicModule, RouterModule]
 })
 export class PaginaInicioComponent {
@@ -25,7 +26,7 @@ export class PaginaInicioComponent {
   }
 
   comprarMedicamentos() {
-    this.navCtrl.navigateForward('/productos');
+    this.navCtrl.navigateForward('/compra-medicamento');
   }
 
   contactarFamiliar() {
